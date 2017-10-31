@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cabin', serif;
+  font: normal 1em;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+ol, ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+button {
+  font-size: 20px;
+}
+
+.center, .btn {
+  text-align: center;
+}
+
+.green {
+  color: lightseagreen;
+}
+
+#navbar {
+  overflow: hidden;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+}
+
+.nav {
+  line-height: 10vh;
+}
+
+.nav .nav-tab {
+  float: right;
+  margin-left: 5vw;
+  min-width: 30px;
+  transition: 0.2s all;
+}
+
+.nav .nav-tab:hover {
+  color: lightseagreen;
+}
+
+.btn {
+  padding: 10px 20px;
+  line-height: 1.133;
+  color: #fff;
+  background-color: lightseagreen;
+  border: 1px solid lightseagreen;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: 0.3s all;
+}
+
+.btn:hover {
+  background-color: darkgreen;
+}
+
+#head {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  padding-bottom: 10vh;
+}

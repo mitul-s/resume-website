@@ -1,0 +1,77 @@
+// Variables
+$green: lightseagreen;
+$grey: #141414;
+$white: #fff;
+$transition: 0.3s all;
+@import 'partials/reset';
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+button {
+  font-size: 20px;
+}
+
+// Holders
+.center {
+  text-align: center;
+}
+
+.green {
+  color: $green;
+}
+
+// Navbar Components
+
+#navbar {
+  overflow: hidden;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+}
+
+.nav {
+  line-height: 10vh;
+  .nav-tab {
+    float: right;
+    margin-left: 5vw;
+    min-width: 30px;
+    transition: 0.2s all;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.btn {
+  @extend .center;
+  padding: 10px 20px;
+  line-height: 1.133;
+  color: $white;
+  background-color: $green;
+  border: 1px solid $green;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+  transition: $transition;
+  &:hover {
+    background-color: darkgreen;
+  }
+}
+
+// Header
+
+#head {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  padding-bottom: 10vh;
+  // background-color: $green;
+}
