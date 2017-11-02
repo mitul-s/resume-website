@@ -1,8 +1,9 @@
 // Variables
-$green: lightseagreen;
-$grey: #141414;
+$primary:   #25BEA0;
+$secondary: #008CDD;
+$grey: #424242;
 $white: #fff;
-$transition: 0.3s all;
+$transition: 150ms all;
 @import 'partials/reset';
 
 h1 {
@@ -15,18 +16,50 @@ h2 {
   font-size: 2rem;
 }
 
-button {
-  font-size: 20px;
+h4 {
+  font-size: 1.3em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 // Holders
+.right {
+  float: right;
+}
+
 .center {
   text-align: center;
 }
 
-.green {
-  color: $green;
+.space-100 {
+  height: 100px;
 }
+
+.primary {
+  color: $primary;
+}
+
+.secondary {
+  color: $secondary;
+}
+
+.white {
+  color: $white;
+}
+
+.padded {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 
 // Navbar Components
 
@@ -34,44 +67,154 @@ button {
   overflow: hidden;
   height: 10vh;
   width: 100%;
-  position: fixed;
+  background-color: transparent;
+  position: absolute;
+  color: $white;
+  // box-shadow: 0 1px 1px 1px rgba(0,0,0,0.15);
 }
 
 .nav {
-  line-height: 10vh;
+  line-height: 3.8;
   .nav-tab {
     float: right;
     margin-left: 5vw;
     min-width: 30px;
     transition: 0.2s all;
     &:hover {
-      color: $green;
+      color: $secondary;
     }
   }
 }
 
 .btn {
   @extend .center;
+  font-size: inherit;
   padding: 10px 20px;
   line-height: 1.133;
   color: $white;
-  background-color: $green;
-  border: 1px solid $green;
+  background-color: $primary;
+  border: 1px solid $primary;
   border-radius: 5px;
-  -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
-  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
   transition: $transition;
+  position: relative;
   &:hover {
     background-color: darkgreen;
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
   }
 }
 
 // Header
 
 #head {
+  // @extend .holder;
+  // background: linear-gradient(
+  //   rgba(20,20,20, 0.5),
+  //   rgba(20,20,20, 0.6)),
+  //   url(../wallpaper.jpg);
+  background-image: linear-gradient(-135deg, #9AFCFF 5%, #2FE0F1 52%, #06CBDE 100%);
   display: flex;
   align-items: center;
-  height: 90vh;
-  padding-bottom: 10vh;
-  // background-color: $green;
+  height: 100vh;
+  .head-about {
+    width: 50%;
+  }
 }
+
+// Experience
+.exp-text {
+  margin-bottom: 40px;
+}
+.exp-item {
+  // padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: $white;
+  width: 100%;
+  min-height: 25vh;
+  border-radius: 5px;
+  // border: 1px solid $primary;
+  box-shadow: 0 0 10px 1px rgba(69,79,91,0.1);
+}
+
+// .exp-main-color {
+//   padding: 10px 20px;
+//   width: 10vw;
+//   height: 100%;
+//   background-color: coral;
+//   border-top-left-radius: 5px;
+//   border-bottom-left-radius: 5px;
+// }
+
+.exp-list {
+  list-style: square;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.exp-item-content {
+  padding: 10px 20px;
+}
+
+.exp-color {
+  background-color: $secondary;
+  color: $white;
+  padding: 10px 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+//
+.card {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: $white;
+  color: $grey;
+  width: 50%;
+  min-height: 25vh;
+  // border-radius: 5px;
+  // border: 1px solid $primary;
+  box-shadow: 0 0 15px 3px rgba(69,79,91,0.3);
+}
+
+
+// projects
+.project-item {
+  min-height: 30vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .project-text {
+    min-height: 30vh;
+    padding: 10px 20px;
+    border: 1px solid $primary;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .project-photo {
+    background-image: radial-gradient(50% 97%, #00C3D1 10%, #005CD1 97%);
+    background-image: linear-gradient(-135deg, #9AFCFF 5%, #2FE0F1 52%, #06CBDE 100%);
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.right-radius {
+  border-radius: 0 5px 5px 0 !important;
+}
+
+
+
+.holder {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Rectangle: */
+// background-image: radial-gradient(50% 97%, #00C3D1 0%, #005CD1 97%);
+// background-image: linear-gradient(-135deg, #9AFCFF 0%, #2FE0F1 52%, #06CBDE 100%);
