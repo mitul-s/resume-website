@@ -6,9 +6,9 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Cabin', serif;
-  color: #424242;
+  color: whitesmoke;
   font: normal 1em;
-  background-color: #fff;
+  background-color: #16191b;
   line-height: 1.5;
 }
 
@@ -60,6 +60,7 @@ p {
 h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  font-size: 1.1em;
 }
 
 .right {
@@ -91,6 +92,13 @@ h5 {
   padding-bottom: 25px;
 }
 
+.underline {
+  width: 15%;
+  height: 2px;
+  background-color: #008CDD;
+  margin-bottom: 25px;
+}
+
 #navbar {
   overflow: hidden;
   height: 10vh;
@@ -116,25 +124,25 @@ h5 {
 }
 
 .btn {
-  font-size: inherit;
-  padding: 10px 20px;
+  font-size: 12px;
+  padding: 5px 10px;
   line-height: 1.133;
   color: #fff;
   background-color: #25BEA0;
-  border: 1px solid #25BEA0;
+  border: none;
   border-radius: 5px;
   transition: 150ms all;
   position: relative;
 }
 
 .btn:hover {
-  background-color: darkgreen;
+  background-color: #008CDD;
   -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 #head {
-  background-image: linear-gradient(-135deg, #9AFCFF 5%, #2FE0F1 52%, #06CBDE 100%);
+  background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.9)), url(../wallpaper.jpg);
   display: flex;
   align-items: center;
   height: 100vh;
@@ -144,8 +152,18 @@ h5 {
   width: 50%;
 }
 
-.exp-text {
-  margin-bottom: 40px;
+#about {
+  margin: 100px 0;
+}
+
+.about-icons li {
+  display: inline;
+  margin-left: 10px;
+  transition: 150ms all;
+}
+
+.about-icons li:hover {
+  color: #424242;
 }
 
 .exp-item {
@@ -165,6 +183,7 @@ h5 {
 
 .exp-item-content {
   padding: 10px 20px;
+  background-color: #16191b;
 }
 
 .exp-color {
@@ -178,8 +197,8 @@ h5 {
 .card {
   padding: 10px 20px;
   margin-bottom: 20px;
-  background-color: #fff;
-  color: #424242;
+  background-color: #16191b;
+  color: #fff;
   width: 50%;
   min-height: 25vh;
   box-shadow: 0 0 15px 3px rgba(69, 79, 91, 0.3);
@@ -194,8 +213,7 @@ h5 {
 .project-item .project-text {
   min-height: 30vh;
   padding: 10px 20px;
-  border: 1px solid #25BEA0;
-  border-radius: 5px 0 0 5px;
+  border: 1px solid #008CDD;
 }
 
 .project-item .project-photo {
@@ -208,11 +226,12 @@ h5 {
   grid-template-columns: 50% 50%;
 }
 
-.right-radius {
-  border-radius: 0 5px 5px 0 !important;
+.footer-box {
+  border-top: 1px solid #fff;
+  padding: 20px 0;
 }
 
-.holder {
+.holder, #head {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -221,5 +240,3 @@ h5 {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-/* Rectangle: */
