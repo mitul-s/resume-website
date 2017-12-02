@@ -138,6 +138,11 @@ h5 {
   .about-icons li:hover {
     color: #424242; }
 
+#now, #cta {
+  height: 30vh;
+  color: #16191b;
+  background-color: #fff; }
+
 .exp-item {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -182,6 +187,9 @@ h5 {
     min-height: 30vh;
     padding: 10px 20px;
     border: 1px solid #008CDD; }
+  .project-item .project-btn {
+    position: relative;
+    top: 30px; }
   .project-item .project-photo {
     background-image: radial-gradient(50% 97%, #00C3D1 10%, #005CD1 97%);
     background-image: linear-gradient(-135deg, #9AFCFF 5%, #2FE0F1 52%, #06CBDE 100%); }

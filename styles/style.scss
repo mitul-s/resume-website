@@ -152,6 +152,13 @@ h5 {
 }
 
 
+// NOW DOING
+#now {
+  height: 30vh;
+  color: $black;
+  background-color: $white;
+}
+
 
 // Experience
 .exp-item {
@@ -197,6 +204,12 @@ h5 {
 }
 
 
+// Call to Action
+#cta {
+  @extend #now;
+}
+
+
 // projects
 .project-item {
   min-height: 30vh;
@@ -206,6 +219,11 @@ h5 {
     min-height: 30vh;
     padding: 10px 20px;
     border: 1px solid $secondary;
+  }
+
+  .project-btn {
+    position: relative;
+    top: 30px;
   }
 
   .project-photo {
