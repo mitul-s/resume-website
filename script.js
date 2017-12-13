@@ -1,3 +1,13 @@
+// Play name on click 
+// Collect variables for the button to click and the sound played
+const nameAudio = document.getElementById('sound');
+const nameSrc = new Audio("media/mitul.mp3");
+
+// Event listener to play sound when clicked.
+nameAudio.addEventListener('click', function () {
+    nameSrc.play();
+});
+
 // LAST FM API WITH Fetch
 
 // Collect IDs and input them into variables to update via API
