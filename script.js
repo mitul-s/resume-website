@@ -38,3 +38,30 @@ function getMusic() {
 
 // Run the function to get music. 
 getMusic();
+
+// Form Validation
+const wrong = "Please enter a valid email address";
+const correct = "Thanks! We'll be in touch.";
+
+
+function validate(event) {
+    'use strict';
+    // Prevent the page from reloading on submit
+    event.preventDefault();
+    // Check if email contains and illegal characters
+    // If email doesn't contain illegal chars, show valid statement
+    // Else reject statement
+    const email = document.getElementById('email'), regex = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (regex.test(email.value)) {
+        document.getElementById('wrong').innerHTML = "";
+        document.getElementById('correct').innerHTML = correct;
+        return true;
+    } else {
+        document.getElementById('correct').innerHTML = "";
+        document.getElementById('wrong').innerHTML = wrong;
+        email.focus;
+        return false;
+    }
+}
+var sub = document.querySelector("#submit");
+sub.addEventListener("click", validate);
