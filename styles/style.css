@@ -158,14 +158,14 @@ h5 {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-#head {
-  background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.9)), url(../wallpaper.jpg);
+#head, #contact {
+  background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.9)), url(../media/wallpaper.jpg);
   display: flex;
   align-items: center;
   height: 100vh;
 }
 
-#head .head-about {
+#head .head-about, #contact .head-about {
   width: 50%;
 }
 
@@ -200,10 +200,6 @@ h5 {
   width: auto;
   padding: 10px;
   border-radius: 2px;
-}
-
-.skills-list .skill:nth-of-type(odd) {
-  background-color: #008CDD;
 }
 
 #now, #cta {
@@ -266,6 +262,10 @@ h5 {
   border: 1px solid #008CDD;
 }
 
+.project-photo img {
+  object-fit: contain;
+}
+
 .project-img {
   border: 1px solid #008CDD;
   height: 30vh;
@@ -277,12 +277,47 @@ h5 {
   grid-template-columns: 50% 50%;
 }
 
+#contact {
+  height: 90vh;
+  background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.9)), url(../media/contact.jpg);
+}
+
+#contact .container {
+  width: 50%;
+}
+
+.btn.contact {
+  padding: 15px;
+  width: 50%;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+  display: block;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 150ms all;
+}
+
+.contact-form input:hover, .contact-form textarea:hover, .contact-form button:hover {
+  border: 2px solid #008CDD;
+}
+
+.contact-form input:focus, .contact-form textarea:focus, .contact-form button:focus {
+  outline: none;
+  border: 2px solid #25BEA0;
+}
+
 .footer-box {
   border-top: 1px solid #fff;
   padding: 20px 0;
 }
 
-.holder, #head {
+.holder, #head, #contact {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -290,6 +325,12 @@ h5 {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+@media only screen and (max-width: 1250px) {
+  .project-container {
+    width: 100%;
+  }
 }
  
 
